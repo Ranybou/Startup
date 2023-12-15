@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
   build: {
     transpile: ["tslib"],
@@ -8,8 +9,10 @@ export default defineNuxtConfig({
   apollo: {
     clients: {
       default: {
-        httpEndpoint: "https://eu-central-1-shared-euc1-02.cdn.hygraph.com/content/clq0nu4d3spte01t0fuwlfele/master",
+        httpEndpoint:
+          "https://eu-central-1-shared-euc1-02.cdn.hygraph.com/content/clq0nu4d3spte01t0fuwlfele/master",
       },
     },
   },
 });
+
