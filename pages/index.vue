@@ -1,15 +1,14 @@
 <script setup>
 const query = gql`
-query Accueil {
-  page(where: {slug: "accueil"}) {
-    slug
-    titre
-    texte {
-      html
+  query Accueil {
+    page(where: { slug: "accueil" }) {
+      slug
+      titre
+      texte {
+        html
+      }
     }
   }
-}
-
 `;
 
 const accueil = ref();
@@ -19,9 +18,9 @@ accueil.value = data.value.page;
 </script>
 
 <template>
-<h2>
+  <h2>
     {{ accueil.titre }}
-</h2>
+  </h2>
 
-<div v-html="accueil.texte.html"></div>
+  <div v-html="accueil.texte.html"></div>
 </template>

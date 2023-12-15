@@ -1,14 +1,13 @@
 <script setup>
 const query = gql`
-  query produit ($slug: String!) {
+  query produit($slug: String!) {
     produit(where: { slug: $slug }) {
-    titre
-    texte {
-      html
+      titre
+      texte {
+        html
+      }
     }
   }
-}
-
 `;
 
 const produit = ref();
@@ -20,13 +19,12 @@ const { data } = await useAsyncQuery(query, {
 
 console.log(data.value);
 produit.value = data.value.produit;
-
 </script>
 
 <template>
   <div v-if="produit" class="max-w-lg">
     <h2 class="text-3xl text-center">{{ produit.titre }}</h2>
-    <div v-html="produit.texte.html"></div> 
+    <div v-html="produit.texte.html"></div>
   </div>
   <div v-else>
     <li>Loading...</li>
