@@ -14,5 +14,5 @@ export default defineNuxtConfig({
       },
     },
   },
+  css: ["remixicon/fonts/remixicon.css"],
 });
-

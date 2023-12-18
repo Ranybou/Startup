@@ -1,14 +1,17 @@
 <script setup>
 const query = gql`
-query Articles {
-  articles {
-    createdAt
-    publishedAt
-    titre
-    slug
-    updatedAt
+  query Articles {
+    articles {
+      createdAt
+      publishedAt
+      titre
+      slug
+      updatedAt
+      image {
+        url(transformation: { document: { output: { format: webp } } })
+      }
+    }
   }
-}
 `;
 
 const articles = ref();
@@ -19,13 +22,12 @@ articles.value = data.value.articles;
 </script>
 
 <template>
-  <li v-for="article in articles">
+  <li v-for="article in articles" class="list-none">
     <NuxtLink :to="`/articles/${article.slug}`">
       <h2>
         {{ article.titre }}
       </h2>
-
-      <div v-html="produit.texte.html"></div>
+      <NuxtImg :src="article.image.url" :alt="article.titre" />
     </NuxtLink>
   </li>
 </template>

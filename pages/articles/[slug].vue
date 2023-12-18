@@ -22,8 +22,8 @@ article.value = data.value.article;
 </script>
 
 <template>
-  <div v-if="articles" class="max-w-lg">
-    <h2 class="text-3xl text-center">{{ articles.titre }}</h2>
+  <div v-if="article" class="max-w-lg">
+    <h2 class="text-3xl text-center">{{ article.titre }}</h2>
     <div v-html="article.texte.html"></div>
   </div>
   <div v-else>

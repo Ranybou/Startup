@@ -1,0 +1,27 @@
+<script setup>
+const query = gql`
+  query Contact {
+    page(where: { slug: "contact" }) {
+      slug
+      titre
+      texte {
+        html
+      }
+    }
+  }
+`;
+
+const contact = ref();
+const { data } = await useAsyncQuery(query);
+console.log(data.value);
+contact.value = data.value.page;
+</script>
+
+<template>
+  <h2>
+    {{ contact.titre }}
+  </h2>
+
+  <div v-html="contact.texte.html"></div>
+  
+</template>

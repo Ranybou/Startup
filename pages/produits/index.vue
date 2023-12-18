@@ -19,7 +19,7 @@ produits.value = data.value.produits;
 </script>
 
 <template>
-  <li v-for="produit in produits">
+  <li v-for="produit in produits" class="list-none">
     <NuxtLink :to="`/produits/${produit.slug}`">
       <h2>
         {{ produit.titre }}
