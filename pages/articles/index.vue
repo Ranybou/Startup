@@ -27,7 +27,7 @@ articles.value = data.value.articles;
       <h2 class="text-xl text-center">
         {{ article.titre }}
       </h2>
-      <NuxtImg :src="produit.image.url" :alt="produit.titre" />
+      <NuxtImg :src="article.image.url" :alt="article.titre" />
     </NuxtLink>
   </li>
 </template>
