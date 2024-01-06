@@ -4,7 +4,7 @@
   >
     <NuxtLink to="/" class="h-44"
       ><NuxtImg
-        src="/android-chrome-512x512.png"
+        src="/android-chrome-192x192.png"
         sizes="100vw sm:50vw md:200px"
       />
     </NuxtLink>
