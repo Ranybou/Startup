@@ -21,11 +21,10 @@ produits.value = data.value.produits;
 <template>
   <li v-for="produit in produits" class="list-none">
     <NuxtLink :to="`/produits/${produit.slug}`">
-      <h2>
+      <h2 class="text-xl text-center">
         {{ produit.titre }}
       </h2>
-
-      <div v-html="produit.texte.html"></div>
+      <NuxtImg :src="article.image.url" :alt="article.titre" />
     </NuxtLink>
   </li>
 </template>

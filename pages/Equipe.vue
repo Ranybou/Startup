@@ -18,9 +18,10 @@ equipe.value = data.value.page;
 </script>
 
 <template>
-  <h2>
-    {{ equipe.titre }}
-  </h2>
+  <h2 class="text-xl text-center">
 
-  <div v-html="equipe.texte.html"></div>
+  </h2>
+  
+
+  <div v-html="equipe.texte.html" ></div>
 </template>

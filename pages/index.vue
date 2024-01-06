@@ -18,8 +18,8 @@ accueil.value = data.value.page;
 </script>
 
 <template>
-  <h2>
-    {{ accueil.titre }}
+  <h2  class="text-xl text-center">
+   
   </h2>
 
   <div v-html="accueil.texte.html"></div>

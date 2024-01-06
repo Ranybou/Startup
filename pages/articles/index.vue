@@ -24,10 +24,10 @@ articles.value = data.value.articles;
 <template>
   <li v-for="article in articles" class="list-none">
     <NuxtLink :to="`/articles/${article.slug}`">
-      <h2>
+      <h2 class="text-xl text-center">
         {{ article.titre }}
       </h2>
-      <NuxtImg :src="article.image.url" :alt="article.titre" />
+      <NuxtImg :src="produit.image.url" :alt="produit.titre" />
     </NuxtLink>
   </li>
 </template>
