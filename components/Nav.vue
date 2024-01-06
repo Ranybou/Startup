@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="container mx-auto px-3 h-24 flex items-center justify-between px-4 mb-10 space-y-10"
+    class="bg-green-200 px-20 py-20 container mx-auto px-3 h-24 flex items-center justify-between px-4 mb-20 space-y-10"
   >
     <NuxtLink to="/" class="h-44"
       ><NuxtImg
