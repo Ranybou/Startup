@@ -1,5 +1,5 @@
 <template>
-  <nav
+<nav
     class="bg-green-200 px-20 py-20 rounded-lg shadow hover:shadow-l container mx-auto px-40 h-24 flex items-center justify-between px-4 mb-20 space-y-5 text-stone-40 text-xl"
   >
     <NuxtLink to="/" class="h-44"

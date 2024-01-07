@@ -18,10 +18,8 @@ equipe.value = data.value.page;
 </script>
 
 <template>
-  <h2 class="text-xl text-center">
 
-  </h2>
-  
 
-  <div v-html="equipe.texte.html" ></div>
+  <div class="text-xl text-center" v-html="equipe.texte.html" ></div>
+
 </template>

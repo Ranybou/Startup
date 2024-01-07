@@ -1,11 +1,11 @@
 <template>
   <form>
-    <div class="space-y-12">
-      <div class="border-b border-gray-900/10 pb-12">
-        <h2 class="text-base font-semibold leading-7 text-gray-900">
-          <i class="ri-user-fill"></i> Contactez-nous !
+    <div class="space-y-12 text-center">
+      <div class="border-b border-zinc-900/10 pb-12 text-center">
+        <h2 class="font-bold text-3xl leading-7 text-zinc-950">
+          <i class="font-bold text-3xl ri-user-fill"></i> Contactez-nous !
         </h2>
-        <p class="mt-1 text-sm leading-6 text-gray-600">
+        <p class="mt-1 text-sm leading-6 text-black text-center">
           Ces informations vont être affichées publiquement, donc faites
           attention aux informations que vous partagez.
         </p>
@@ -14,19 +14,19 @@
           <div class="sm:col-span-4">
             <label
               for="nom"
-              class="block text-sm font-medium leading-6 text-gray-900"
+              class="block text-sm font-medium leading-6 text-zinc-950 text-center"
               >Nom</label
             >
             <div class="mt-2">
               <div
-                class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"
+                class="flex rounded-md shadow-sm ring-1 ring-inset ring-black focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"
               >
-                <input
+                <input 
                   type="text"
                   name="nom"
                   id="nom"
                   autocomplete="nom"
-                  class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                  class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-zinc-950 placeholder:text-black focus:ring-0 sm:text-sm sm:leading-6 "
                   placeholder="Bouhlila"
                 />
               </div>
@@ -39,19 +39,19 @@
         <div class="sm:col-span-4">
           <label
             for="prenom"
-            class="block text-sm font-medium leading-6 text-gray-900"
+            class="block text-sm font-medium leading-6 text-zinc-950 text-center"
             >Prénom</label
           >
           <div class="mt-2">
             <div
-              class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"
+              class="flex rounded-md shadow-sm ring-1 ring-inset ring-black focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"
             >
               <input
                 type="text"
                 name="prenom"
                 id="prenom"
                 autocomplete="prenom"
-                class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-zinc-950 placeholder:text-black focus:ring-0 sm:text-sm sm:leading-6"
                 placeholder="Rany"
               />
             </div>
@@ -59,23 +59,23 @@
         </div>
 
         <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8">
-          <div class="border-b border-gray-900/10 pb-2"></div>
-          <div class="sm:col-span-4">
+          <div class="border-b border-black/10 pb-2"></div>
+          <div class="sm:col-span-4 text-center">
             <label
               for="email"
-              class="block text-sm font-medium leading-6 text-gray-900"
+              class="block text-sm font-medium leading-6 text-zinc-950 text-center"
               >E-mail</label
             >
             <div class="mt-2">
               <div
-                class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"
+                class="flex rounded-md shadow-sm ring-1 ring-inset ring-black focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"
               >
                 <input
                   type="email"
                   name="email"
                   id="email"
                   autocomplete="email"
-                  class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                  class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-zinc-950 placeholder:text-black focus:ring-0 sm:text-sm sm:leading-6"
                   placeholder="exemple@demail.be"
                 />
               </div>
@@ -84,7 +84,7 @@
           <div class="col-span-full">
             <label
               for="message"
-              class="block text-sm font-medium leading-6 text-gray-900"
+              class="block text-sm font-medium leading-6 text-zinc-950 text-center"
               >Votre message</label
             >
             <div class="mt-2">
@@ -92,10 +92,10 @@
                 id="message"
                 name="message"
                 rows="3"
-                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                class="block w-full rounded-md border-0 py-1.5 text-zinc-950 shadow-sm ring-1 ring-inset ring-black placeholder:text-black focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
-            <p class="mt-3 text-sm leading-6 text-gray-600">
+            <p class="mt-3 text-sm leading-6 text-black text-center">
               Ecrivez le message souhaité.
             </p>
           </div>
@@ -106,7 +106,7 @@
     <div class="mt-6 flex items-center justify-end gap-x-6">
       <button
         type="button"
-        class="text-sm font-semibold leading-6 text-gray-900"
+        class="text-sm font-semibold leading-6 text-zinc-950"
       >
         Annuler
       </button>
@@ -118,6 +118,7 @@
       </button>
     </div>
   </form>
+
 </template>
 
 <script setup></script>

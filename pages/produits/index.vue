@@ -2,10 +2,13 @@
 const query = gql`
   query Produits {
     produits {
-      slug
+      createdAt
+      publishedAt
       titre
-      texte {
-        html
+      slug
+      updatedAt
+      image {
+        url(transformation: { document: { output: { format: webp } } })
       }
     }
   }
@@ -21,10 +24,11 @@ produits.value = data.value.produits;
 <template>
   <li v-for="produit in produits" class="list-none">
     <NuxtLink :to="`/produits/${produit.slug}`">
-      <h2 class="text-xl text-center">
+      <h2 class="font-bold text-4xl text-center">
         {{ produit.titre }}
       </h2>
-      <NuxtImg :src="produit.image.url" :alt="produit.titre" />
+      <NuxtImg class="flex items-center justify-center" :src="produit.image.url" :alt="produit.titre" />
     </NuxtLink>
   </li>
+
 </template>

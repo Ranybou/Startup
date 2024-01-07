@@ -23,8 +23,8 @@ produit.value = data.value.produit;
 
 <template>
   <div v-if="produit" class="max-w-lg">
-    <h2 class="text-3xl text-center">{{ produit.titre }}</h2>
-    <div v-html="produit.texte.html"></div>
+    <h2 class="font-bold text-4xl text-center">{{ produit.titre }}</h2>
+    <div class="text-xl" v-html="produit.texte.html"></div>
   </div>
   <div v-else>
     <li>Loading...</li>

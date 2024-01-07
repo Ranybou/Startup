@@ -11,6 +11,7 @@ const query = gql`
   }
 `;
 
+
 const accueil = ref();
 const { data } = await useAsyncQuery(query);
 console.log(data.value);
@@ -18,9 +19,10 @@ accueil.value = data.value.page;
 </script>
 
 <template>
-  <h2  class="text-xl text-center">
+  <h2  class="font-bold text-5xl text-center">
    
   </h2>
 
-  <div v-html="accueil.texte.html"></div>
+  <div class="font-bold text-4xl text-center" v-html="accueil.texte.html"></div>
+
 </template>
