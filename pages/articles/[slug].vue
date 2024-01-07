@@ -23,7 +23,7 @@ article.value = data.value.article;
 
 <template>
   <div v-if="article" class="max-w-lg">
-    <h2 class="font-bold text-2xl text-center">{{ article.titre }}</h2>
+    <h2 class="font-bold text-xl text-center">{{ article.titre }}</h2>
     <div class="text-xl" v-html="article.texte.html"></div>
   </div>
   <div v-else>
