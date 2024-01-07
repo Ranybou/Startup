@@ -22,8 +22,8 @@ produit.value = data.value.produit;
 </script>
 
 <template>
-  <div v-if="produit" class="max-w-lg">
-    <h2 class="font-bold text-4xl text-center">{{ produit.titre }}</h2>
+  <div v-if="produit" class="max-w-lg text-center">
+    <h2 class="font-bold text-2xl text-center">{{ produit.titre }}</h2>
     <div class="text-xl" v-html="produit.texte.html"></div>
   </div>
   <div v-else>
