@@ -34,7 +34,7 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
       },
       handleScroll() {
-        this.showButton = window.scrollY > 300;
+        this.showButton = window.scrollY > 100;
       },
     },
     mounted() {
