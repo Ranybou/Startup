@@ -28,7 +28,7 @@ articles.value = data.value.articles;
       <h2 class="font-bold text-xl text-center">
         {{ article.titre }}
       </h2>
-      <NuxtImg class="blur-sm hover:filter-none justify-between" :src="article.image.url" :alt="article.titre" />
+      <NuxtImg class="flex flex-wrap items-center justify-center text-center blur-sm hover:filter-none justify-between " :src="article.image.url" :alt="article.titre" />
     </NuxtLink>
   </li>
 

@@ -7,7 +7,7 @@
     <NuxtLink to="/" class="h-44"
       ><NuxtImg
         src="/android-chrome-192x192.png"
-        sizes="100vw sm:100vw md:100vw"
+        sizes="100vw sm:100vw md:200px"
       />
     </NuxtLink>
     <ul class="flex space-x-8 items-center">

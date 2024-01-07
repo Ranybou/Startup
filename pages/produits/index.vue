@@ -24,7 +24,7 @@ produits.value = data.value.produits;
 <template>
   <li v-for="produit in produits" class="list-none ">
     <NuxtLink :to="`/produits/${produit.slug}`">
-      <h2 class="font-bold text-xl text-center">
+      <h2 class="font-bold text-xl">
         {{ produit.titre }}
       </h2>
       <NuxtImg class="blur-sm hover:filter-none justify-between" :src="produit.image.url" :alt="produit.titre" />
