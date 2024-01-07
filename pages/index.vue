@@ -23,6 +23,6 @@ accueil.value = data.value.page;
    
   </h2>
 
-  <div class="font-bold text-4xl text-center" v-html="accueil.texte.html"></div>
+  <div class="font-bold text-4xl text-center hover:text-white" v-html="accueil.texte.html"></div>
 
 </template>
